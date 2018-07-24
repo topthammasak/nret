@@ -1,0 +1,130 @@
+/*******************************************************************
+* Phu Dahla - Google font
+* Date time: January 13, 2015
+*******************************************************************/
+
+@font-face {
+	font-family: "phu-dahla";
+	src:url("#{$font-path}phu-dahla.eot");
+	src:url("#{$font-path}phu-dahla.eot?#iefix") format("embedded-opentype"),
+		url("#{$font-path}phu-dahla.woff") format("woff"),
+		url("#{$font-path}phu-dahla.ttf") format("truetype"),
+		url("#{$font-path}phu-dahla.svg#phu-dahla") format("svg");
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+[data-icon]:before {
+	font-family: "phu-dahla" !important;
+	content: attr(data-icon);
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="pdl-"]:before,
+[class*=" pdl-"]:before {
+	font-family: "phu-dahla" !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.pdl-facebook:before {
+	content: "b";
+}
+.pdl-mail:before {
+	content: "a";
+}
+.pdl-atv-riding:before {
+	content: "c";
+}
+.pdl-climbing:before {
+	content: "d";
+}
+.pdl-fishing:before {
+	content: "e";
+}
+.pdl-golf:before {
+	content: "f";
+}
+.pdl-hiking:before {
+	content: "g";
+}
+.pdl-hopping:before {
+	content: "h";
+}
+.pdl-hot-spring:before {
+	content: "i";
+}
+.pdl-kayaking:before {
+	content: "j";
+}
+.pdl-scuba-diving:before {
+	content: "k";
+}
+.pdl-snorkeling:before {
+	content: "l";
+}
+.pdl-spa:before {
+	content: "m";
+}
+.pdl-swimming:before {
+	content: "n";
+}
+.pdl-question:before {
+	content: "o";
+}
+.pdl-angle-double-up:before {
+	content: "q";
+}
+.pdl-check-alt:before {
+	content: "r";
+}
+.pdl-car-side:before {
+	content: "t";
+}
+.pdl-pedestrian:before {
+	content: "u";
+}
+.pdl-arrows-out:before {
+	content: "p";
+}
+.pdl-arrows-in:before {
+	content: "x";
+}
+.pdl-bathroom:before {
+	content: "s";
+}
+.pdl-bedroom:before {
+	content: "v";
+}
+.pdl-sqm:before {
+	content: "w";
+}
+.pdl-angle-double-down:before {
+	content: "y";
+}
+.pdl-sharethis:before {
+	content: "z";
+}
+.pdl-photo:before {
+	content: "A";
+}
+.pdl-chat-bubble:before {
+	content: "B";
+}
+.pdl-play:before {
+	content: "C";
+}

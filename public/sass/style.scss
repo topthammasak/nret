@@ -1,0 +1,107 @@
+/*******************************************************************
+* Style Sheet
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 13, 2015
+* Version: 3.0.0
+*******************************************************************/
+
+// STAR BOOTSTRAP -------------------------------
+// Vendor
+// Core variables and mixins
+@import "vendors/bootstrap/bootstrap/variables";
+@import "vendors/bootstrap/bootstrap/mixins";
+
+// Reset and dependencies
+@import "vendors/bootstrap/bootstrap/normalize";
+@import "vendors/bootstrap/bootstrap/print";
+//@import "vendors/bootstrap/bootstrap/glyphicons";
+
+// Core CSS
+@import "vendors/bootstrap/bootstrap/scaffolding";
+@import "vendors/bootstrap/bootstrap/type";
+@import "vendors/bootstrap/bootstrap/code";
+@import "vendors/bootstrap/bootstrap/grid";
+//@import "vendors/bootstrap/bootstrap/tables";
+@import "vendors/bootstrap/bootstrap/forms";
+@import "vendors/bootstrap/bootstrap/buttons";
+
+// Components
+//@import "vendors/bootstrap/bootstrap/component-animations";
+//@import "vendors/bootstrap/bootstrap/dropdowns";
+//@import "vendors/bootstrap/bootstrap/button-groups";
+@import "vendors/bootstrap/bootstrap/input-groups";
+@import "vendors/bootstrap/bootstrap/navs";
+@import "vendors/bootstrap/bootstrap/navbar";
+//@import "vendors/bootstrap/bootstrap/breadcrumbs";
+//@import "vendors/bootstrap/bootstrap/pagination";
+//@import "vendors/bootstrap/bootstrap/pager";
+//@import "vendors/bootstrap/bootstrap/labels";
+//@import "vendors/bootstrap/bootstrap/badges";
+//@import "vendors/bootstrap/bootstrap/jumbotron";
+@import "vendors/bootstrap/bootstrap/thumbnails";
+//@import "vendors/bootstrap/bootstrap/alerts";
+//@import "vendors/bootstrap/bootstrap/progress-bars";
+@import "vendors/bootstrap/bootstrap/media";
+@import "vendors/bootstrap/bootstrap/list-group";
+//@import "vendors/bootstrap/bootstrap/panels";
+@import "vendors/bootstrap/bootstrap/responsive-embed";
+@import "vendors/bootstrap/bootstrap/wells";
+@import "vendors/bootstrap/bootstrap/close";
+
+// Components w/ JavaScript
+//@import "vendors/bootstrap/bootstrap/modals";
+//@import "vendors/bootstrap/bootstrap/tooltip";
+//@import "vendors/bootstrap/bootstrap/popovers";
+//@import "vendors/bootstrap/bootstrap/carousel";
+
+// Utility classes
+@import "vendors/bootstrap/bootstrap/utilities";
+@import "vendors/bootstrap/bootstrap/responsive-utilities";
+
+// END BOOTSTRAP -------------------------------
+
+// Include config
+@import "helpers/_config.scss";
+
+// Font Face
+@import "fontface/_opensans.scss";
+@import "fontface/_phudahla.scss";
+//@import "vendors/font-awesome/scss/font-awesome.scss";
+
+// Helper
+@import "helpers/_mixins.scss";
+//@import "helpers/_animate.scss";
+
+// Components
+//@import "components/_bubble.scss";
+//@import "components/_button.scss";
+//@import "components/_lightbox.scss";
+//@import "components/_linethrough.scss";
+//@import "components/_listnum.scss";
+//@import "components/_loading.scss";
+//@import "components/_gototop.scss";
+@import "vendors/magnificPopup/main.scss";
+@import "components/_qtip.scss";
+@import "components/_preload.scss";
+@import "components/_timeline.scss";
+//@import "components/_timer.scss";
+
+// User theme
+@import "themes/_leftsolid.scss";
+
+// Layout
+@import "layout/_header.scss";
+@import "layout/_content.scss";
+@import "layout/_footer.scss";
+
+// Page
+@import "pages/_facilities.scss";
+@import "pages/_faqslegal.scss";
+@import "pages/_gallery.scss";
+@import "pages/_home.scss";
+@import "pages/_locateus.scss";
+@import "pages/_masterplan.scss";
+@import "pages/_media.scss";
+@import "pages/_ourprofile.scss";
+@import "pages/_progress.scss";
+@import "pages/_whykrabi.scss";

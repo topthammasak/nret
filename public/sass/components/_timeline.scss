@@ -1,0 +1,170 @@
+/*******************************************************************
+* Timeline - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: February 2, 2015
+*******************************************************************/
+
+$cl-line: #bbb;
+.timeline {
+	margin: 30px 0 0;
+	position: relative;
+	@include clearfix();
+	.year {
+		padding: 56px 0 25px;
+		.entry {
+			position: relative;
+			.datetime {
+				font-size: 10px;
+				line-height: 1em;
+				padding: 8px 0 0 0;
+				position: absolute;
+				right: 0;
+				text-transform: uppercase;
+				top: 10px;
+				width: 100px;
+				strong {
+					display: block;
+					line-height: 1em;
+					font-size: 12px;
+					margin: 2px 0 0;
+				}
+				&::before {
+					content: '';
+					color: #fff;
+					font-family: "phu-dahla";
+					font-size: 16px;
+					position: absolute;
+					top: 17px;
+					z-index: 4;
+				}
+				&::after {
+					content: '';
+					background-color: $cl-line;
+					border: 2px solid #fff;
+					height: 36px;
+					position: absolute;
+					top: 4px;
+					width: 36px;
+					z-index: 3;
+					@include border-radius(50%);
+					@include box-shadow(0 0 3px rgba($cl-black, 0.2));
+				}
+			}
+			.detail {
+				background-color: #FFF;
+				padding: 15px;
+				@include box-shadow(0 0 3px rgba($cl-black, 0.2));
+				h3 {
+					font-size: 16px;
+					font-weight: 700;
+					margin: 0 0 10px;
+				}
+				.figures {
+/*					margin: 0 -1px;
+					padding: 0 2px;
+					@include clearfix();
+					.item {
+						float: left;
+						padding: 0 1px 2px;
+						width: 50%;
+						img {
+							width: 100%;
+						}
+						&.cover {
+							float: none;
+							//margin: 0 -1px;
+							//padding: 0;
+							width: auto;
+						}
+					}*/
+					.item {
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			+ .entry {
+				margin-top: 25px;
+			}
+			&.picture {
+				.datetime {
+					&::before {
+						content: 'A';
+					}
+					&::after {
+						background-color: $cl-green;
+					}
+				}
+			}
+			&.message {
+				.datetime {
+					&::before {
+						content: 'B';
+					}
+				}
+			}
+			&.video {
+				.datetime {
+					&::before {
+						content: 'C';
+					}
+				}
+			}
+			&::before {
+				content: '';
+				background-color: $cl-line;
+				height: 4px;
+				position: absolute;
+				top: 30px;
+				width: 42px;
+				z-index: 2;
+			}
+			&:nth-child(odd) {
+				margin-right: 50%;
+				padding-right: 42px;
+				.datetime {
+					right: -130px;
+					text-align: left;
+					&::before {
+						left: -38px;
+					}
+					&::after {
+						left: -48px;
+					}
+				}
+				&::before {
+					right: 0;
+				}
+			}
+			&:nth-child(even) {
+				margin-left: 50%;
+				padding-left: 42px;
+				.datetime {
+					left: -130px;
+					text-align: right;
+					&::before {
+						right: -38px;
+					}
+					&::after {
+						right: -48px;
+					}
+				}
+				&::before {
+					left: 0;
+				}
+			}
+		}
+		&::after {
+			content: '';
+			background-color: $cl-line;
+			height: 100%;
+			left: 50%;
+			margin: 0 0 0 -2px;
+			position: absolute;
+			top: 0;
+			width: 4px;
+			z-index: 0;
+		}
+	}
+}

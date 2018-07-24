@@ -1,0 +1,130 @@
+/*******************************************************************
+* FAQs / Legal - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 19, 2015
+*******************************************************************/
+
+.faqslegal {
+	.article {
+		padding: 30px;
+		position: relative;
+		@include clearfix();
+		p {
+			margin: 0;
+			+ p {
+				margin: 15px 0 0;
+			}
+		}
+		.media {
+			.media-left {
+				background-color: $cl-green;
+				padding: 0;
+				width: 120px;
+				h2 {
+					background-color: $cl-green;
+					color: $cl-white;
+					font-size: 24px;
+					height: 100%;
+					margin: -30px 0 0;
+					padding: 30px 0 0;
+					text-align: center;
+					text-transform: uppercase;
+				}
+			}
+			.media-body {
+				color: $cl-gray-2;
+				.media-heading {
+					font-size: 15px;
+					margin-left: 30px;
+					h3 {
+						color: $cl-blue;
+						font-weight: 700;
+						font-size: 36px;
+						margin: 0 0 15px;
+						text-transform: uppercase;
+						z-index: 1;
+						small {
+							display: block;
+							font-size: 18px;
+							font-weight: 400;
+							letter-spacing: 1px;
+						}
+					}
+				}
+			}
+		}
+		.questions {
+			list-style: none;
+			margin: 20px 0 0;
+			padding: 0;
+			li {
+				padding: 5px 0 5px 25px;
+				position: relative;
+				a {
+					color: $cl-gray-2;
+					display: block;
+					font-size: 15px;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+				&::before {
+					content: 'o';
+					color: $cl-gray-2;
+					font-family: "phu-dahla";
+					font-size: 14px;
+					left: 0;
+					position: absolute;
+					top: 6px;
+				}
+			}
+		}
+		.answers {
+			font-size: 13px;
+			list-style: none;
+			margin: 20px 0;
+			padding: 0;
+			> li {
+				h4 {
+					color: $cl-blue;
+					font-size: 16px;
+					font-weight: bold;
+					margin: 0 0 5px;
+					text-transform: uppercase;
+				}
+				h5 {
+					color: $cl-black;
+					font-size: 13px;
+					font-weight: 600;
+					margin: 0;
+					text-transform: uppercase;
+				}
+				> ul {
+					list-style: square;
+					margin: 10px 0;
+					> li {
+						padding: 3px 0;
+					}
+				}
+				p + h5 {
+					margin-top: 20px;
+				}
+				+ li {
+					margin-top: 20px;
+				}
+			}
+			.backtotop {
+				display: block;
+				font-size: 10px;
+				padding: 4px 0 0;
+				position: relative;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+		.resource {
+			font-size: 11px;
+			text-align: right;
+			text-transform: uppercase;
+		}
+	}
+}

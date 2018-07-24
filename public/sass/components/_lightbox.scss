@@ -1,0 +1,52 @@
+/*******************************************************************
+* Bubble - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 19, 2014
+*******************************************************************/
+
+.lightbox_overlay {
+	background-color: rgba(#000,0.5);
+	bottom: 0;
+	display: none;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+	.lightbox_body {
+		display: table;
+		height: 100%;
+		width: 100%;
+		.lightbox_entry {
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+			.lighbox_close {
+				border: 2px solid #FFF;
+				background-color: #000;
+				background-image: url('#{$img-path}close.png');
+				background-position: center center;
+				background-repeat: no-repeat;
+				color: #FFF;
+				cursor: pointer;
+				display: table-cell;
+				font-size: 18px;
+				font-weight: bold;
+				height: 20px;
+				overflow: hidden;
+				position: absolute;
+				right: -15px;
+				text-indent: -999px;
+				top: -15px;
+				vertical-align: middle;
+				width: 20px;
+				@include border-radius(50%);
+				@include box-shadow(0 0 3px rgba(0,0,0,0.7));
+				&:hover,&:active,&:focus {
+					color: #FFF;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

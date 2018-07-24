@@ -1,0 +1,20 @@
+/*******************************************************************
+* Footer - Layout
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 13, 2015
+*******************************************************************/
+
+.footer {
+	bottom: 10px;
+	left: 0;
+	position: absolute;
+	width: 280px;
+	small {
+		color: $cl-white;
+		display: block;
+		font-size: 7px;
+		opacity: 0.5;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

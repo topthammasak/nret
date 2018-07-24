@@ -1,0 +1,55 @@
+/*******************************************************************
+* List num - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 22, 2014
+*******************************************************************/
+
+.list-num {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	li {
+		margin: 0 0 20px;
+		strong,p {
+			/*display: table-cell;*/
+		}
+		strong {
+			padding: 0 30px 0 0;
+			vertical-align: top;
+			span {
+				background-color: $teal;
+				font-family: $gg-font-family;
+				color: #FFF;
+				display: block;
+				font-size: 32px;
+				font-weight: bold;
+				height: 40px;
+				line-height: 38px;
+				padding: 0;
+				text-align: center;
+				width: 40px;
+				margin: 0px auto -15px auto;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				@include border-radius(50%);
+			}
+		}
+		p {
+			margin: 0;
+			.underline {
+				@include underline(1px, #000);
+			}
+		}
+	}
+	&.pink {
+		li {
+			strong {
+				span {
+					background-color: $pink;
+				}
+			}
+		}
+	}
+}

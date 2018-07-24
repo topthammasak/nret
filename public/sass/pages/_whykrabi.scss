@@ -1,0 +1,97 @@
+/*******************************************************************
+* Why Krabi - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 19, 2015
+*******************************************************************/
+
+.whykrabi {
+	.article {
+		padding: 30px;
+		position: relative;
+		@include clearfix();
+		h2 {
+			background-color: $cl-green;
+			color: $cl-white;
+			font-size: 24px;
+			height: 140px;
+			margin: -30px 0 0;
+			padding: 40px 0 0;
+			text-align: center;
+			text-transform: uppercase;
+			width: 120px;
+			+ .media {
+				margin-top: -110px;
+			}
+		}
+		.media {
+			color: $cl-gray-2;
+			float: left;
+			font-size: 14px;
+			margin: 0 -10px;
+			.media-heading {
+				color: $cl-blue;
+				font-weight: 700;
+				margin: 0 0 10px;
+				text-transform: uppercase;
+				small {
+					color: $cl-gray-4;
+					display: block;
+				}
+			}
+			.media-body {
+				p {
+					margin: 0;
+					+ p {
+						margin-top: 15px;
+					}
+				}
+				h4 {
+					color: $cl-black;
+					font-size: 16px;
+					margin: 0 0 5px;
+				}
+				ul {
+					list-style: none;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					li {
+						float: left;
+						line-height: 2em;
+						margin: 10px 0 0;
+						width: 25%;
+						span {
+							background-color: $cl-blue;
+							color: $cl-white;
+							display: table;
+							float: left;
+							font-size: 18px;
+							height: 30px;
+							margin: 0 8px 0 0;
+							width: 30px;
+							@include border-radius(3px);
+							&::before {
+								display: table-cell;
+								text-align: center;
+								vertical-align: middle;
+							}
+						}
+					}
+				}
+			}
+			.media-left,.media-body,.media-right {
+				padding: 0 10px;
+				width: 50%;
+				.img-responsive {
+					width: 100%;
+				}
+			}
+			+ .media {
+				margin-top: 30px;
+			}
+		}
+		+ .article {
+			padding-top: 0;
+		}
+	}
+}

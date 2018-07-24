@@ -1,0 +1,190 @@
+/*******************************************************************
+* Master Plan - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 16, 2015
+*******************************************************************/
+
+.masterplan {
+	position: relative;
+	h2 {
+		color: $cl-blue;
+		font-size: 24px;
+		font-weight: 700;
+		height: 140px;
+		left: 30px;
+		margin: 0;
+		padding: 30px 0 0;
+		position: absolute;
+		text-align: center;
+		text-transform: uppercase;
+		top: 0;
+		z-index: 9;
+		small {
+			color: $cl-blue;
+			display: block;
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 2px;
+			margin: 3px 0 0;
+			text-align: left;
+			sup {
+				text-transform: lowercase;
+			}
+		}
+		&.havebg {
+			background-color: $cl-green;
+			color: $cl-white;
+			display: none;
+			left: 310px;
+			padding-left: 20px;
+			padding-right: 20px;
+			position: fixed;
+			top: 0;
+			small {
+				color: $cl-white;
+				font-size: 14px;
+				letter-spacing: 0;
+			}
+		}
+	}
+	.perspective {
+		bottom: 0;
+		left: 0;
+		margin: 0;
+		max-height: none;
+		max-width: none;
+		overflow: hidden;
+		position: absolute;
+		right: 0;
+		top: 0;
+		&.tower,&.floor {
+			.image {
+				height: 100%;
+				overflow: hidden;
+				position: relative;
+				.mapster_wrap {
+					margin: 0 auto;
+					img {
+						display: block;
+						height: auto;
+						left: 0;
+						margin: 0;
+						position: absolute;
+						top: 0;
+						width: auto;
+					}
+				}
+			}
+		}
+		&.tower {
+			p {
+				background-color: rgba($cl-black, 0.5);
+				bottom: 0;
+				display: none;
+				color: $cl-white;
+				font-size: 11px;
+				left: 0;
+				line-height: 1.2em;
+				margin: 0;
+				padding: 8px 10px;
+				position: absolute;
+				right: 0;
+			}
+		}
+		&.floor {
+			.image {
+				padding: 60px;
+				text-align: center;
+				img {
+					max-width: 100%;
+					width: 100%;
+				}
+				a {
+					display: inline-block;
+					font-size: 11px;
+					margin: 10px 0 0;
+					text-decoration: none;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.thumbnail {
+		border: none;
+		bottom: 15px;
+		left: 20px;
+		margin: 0;
+		outline: none;
+		padding: 0;
+		position: absolute;
+		//right: 20px;
+		//top: 15px;
+		@include border-radius(0);
+		@include box-shadow(0 0 3px rgba($cl-black, 0.5));
+		small {
+			background-color: rgba($cl-black, 0.8);
+			bottom: 0;
+			color: $cl-white;
+			font-size: 9px;
+			left: 0;
+			padding: 3px 6px;
+			position: absolute;
+			right: 0;
+		}
+		&:hover,&:focus {
+			border: none;
+		}
+	}
+	.media {
+		margin: 0;
+		padding: 30px;
+		.media-body {
+			width: 30%;
+			h3 {
+				color: $cl-blue-2;
+				margin: 10px 0 10px;
+				text-transform: uppercase;
+				small {
+					color: $cl-green;
+					display: block;
+					font-size: 14px;
+					margin: 0 0 5px;
+				}
+			}
+			p {
+				margin: 0 0 10px;
+				a {
+					display: block;
+					font-size: 10px;
+					text-align: right;
+					text-transform: uppercase;
+				}
+			}
+			+ .media-right {
+				padding-left: 30px;
+				width: 70%;
+			}
+		}
+		.media-right {
+			position: relative;
+/*			.mosaic {
+				padding:10px;
+				img {
+					vertical-align:bottom;
+					opacity:0;
+				}
+			}*/
+			.mosaic {
+				margin: 0 -8px;
+				img {
+					display: inline-block;
+					max-width: 100%;
+					padding: 0 8px;
+					+ img {
+						padding-top: 14px;
+					}
+				}
+			}
+		}
+	}
+}

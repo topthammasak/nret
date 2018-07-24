@@ -1,0 +1,109 @@
+/*******************************************************************
+* qTip - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 22, 2015
+*******************************************************************/
+
+.qtip {
+	direction: ltr;
+	display: none;
+	font-size: 10.5px;
+	left: -28000px;
+	line-height: 12px;
+	padding: 0;
+	position: absolute;
+	top: -28000px;
+	&.qtip-floor {
+		background-color: rgba($cl-teal, 0.8);
+		padding: 10px 15px;
+		.qtip-content {
+			color: $cl-white;
+			font-size: 14px;
+			line-height: 1;
+			text-align: center;
+			strong {
+				display: block;
+				font-size: 18px;
+				line-height: 1;
+				margin: 0 0 7px;
+				text-transform: uppercase;
+			}
+		}
+		&.qtip-left,&.qtip-right {
+			.qtip-content {
+				&::after {
+					content: '';
+					background-image: url('#{$img_path}arrow-tooltip.png');
+					background-position: 0 0;
+					background-repeat: no-repeat;
+					bottom: -12px;
+					height: 12px;
+					position: absolute;
+					width: 28px;
+				}
+			}
+		}
+		&.qtip-left {
+			.qtip-content {
+				&::after {
+					background-position: 0 -12px;
+					left: 0;
+				}
+			}
+		}
+		&.qtip-right {
+			.qtip-content {
+				&::after {
+					right: 0;
+				}
+			}
+		}
+	}
+	&.qtip-room {
+		background-color: rgba($cl-teal, 0.8);
+		padding: 10px 15px;
+		.qtip-content {
+			color: $cl-white;
+			font-size: 14px;
+			line-height: 1;
+			text-align: center;
+			strong {
+				display: block;
+				font-size: 18px;
+				font-weight: 600;
+				line-height: 1;
+				margin: 0 0 10px;
+				text-transform: uppercase;
+			}
+			span {
+				display: inline-block;
+				font-size: 12px;
+				font-weight: 300;
+				text-transform: uppercase;
+				&::before {
+					background-color: $cl-white;
+					color: $cl-teal;
+					margin-right: 3px;
+					padding: 3px;
+					@include border-radius(2px);
+				}
+				+ span {
+					margin-left: 5px;
+				}
+			}
+			&::after {
+				content: '';
+				background-image: url('#{$img_path}arrow-tooltip.png');
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				bottom: -12px;
+				height: 12px;
+				left: 50%;
+				margin: 0 0 0 -14px;
+				position: absolute;
+				vertical-align: top;
+				width: 28px;
+			}
+		}
+	}
+}

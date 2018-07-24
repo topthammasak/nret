@@ -1,0 +1,56 @@
+/*******************************************************************
+* Mixin - Helper
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 8, 2014
+*******************************************************************/
+
+@mixin animation($animate) {
+	-webkit-animation: $animate;
+			animation: $animate;
+}
+@mixin box-shadow($shadow) {
+	-webkit-box-shadow: $shadow;
+	   -moz-box-shadow: $shadow;
+			box-shadow: $shadow;
+}
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+			border-radius: $radius;
+}
+@mixin clearfix() {
+	&:before,
+		&:after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin rotate ($deg) {
+	@include transform(rotate(#{$deg}deg));
+}
+@mixin transform($transform) {
+	-webkit-transform: $transform;
+	-ms-transform: $transform;
+	transform: $transform;
+}
+@mixin transform-origin($origin) {
+	-webkit-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+    moz-transform-origin: $origin;
+	-o-transform-origin: $origin;
+	transform-origin: $origin;
+}
+@mixin transition($transition){
+    -webkit-transition: $transition;
+	-moz-transition: $transition;
+	-o-transition: $transition;
+	transition: $transition;
+}
+@mixin underline($size, $color){
+	border-bottom: $size solid $color;
+	display: inline-block;
+	line-height: 0.9em;
+}

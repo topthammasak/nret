@@ -1,0 +1,27 @@
+/*******************************************************************
+* Construction Progress - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 21, 2015
+*******************************************************************/
+
+.constructionprogress {
+	background-color: $cl-gray-5;
+	background-image: url('#{$img_path}bg-progress.png');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px 30px 0;
+	h2 {
+		color: $cl-blue;
+		font-size: 24px;
+		font-weight: 700;
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		small {
+			display: block;
+			font-size: 12px;
+			padding: 5px 0 0;
+		}
+	}
+}

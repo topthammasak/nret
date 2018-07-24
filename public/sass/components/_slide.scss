@@ -1,0 +1,47 @@
+/*******************************************************************
+* Slide - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 9, 2014
+*******************************************************************/
+
+$slide-height: 979px;
+$slide-padding: 10px;
+.slide {
+	//height: $slide-height;
+	//overflow: hidden;
+	.item {
+		background-color: #FFF;
+		//bottom: $slide-padding;
+		color: #FFF;
+		//left: $slide-padding;
+		overflow: hidden;
+		padding: $slide-padding;
+		position: relative;
+		//position: absolute;
+		//right: $slide-padding;
+		//top: $slide-padding;
+		z-index: 1;
+		h2 {
+			bottom: 20px;
+			font-size: 78px;
+			left: 20px;
+			margin: 0;
+			position: absolute;
+			small {
+				color: #FFF;
+				display: block;
+				font-size: 30px;
+			}
+		}
+		.figure {
+			img {
+				height: auto;
+				width: 100%;
+			}
+		}
+		&:nth-child(n+2) {
+			display: none;
+			z-index: 0;
+		}
+	}
+}

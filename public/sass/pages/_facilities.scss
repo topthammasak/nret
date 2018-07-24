@@ -1,0 +1,160 @@
+/*******************************************************************
+* Facilities - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 17, 2015
+*******************************************************************/
+
+.facilities {
+	overflow: hidden;
+	position: relative;
+	.list {
+		background-color: rgba($cl-black, 0.75);
+		padding: 10px 15px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 99;
+		h4 {
+			color: $cl-white;
+			font-size: 16px;
+			font-weight: 600;
+			margin: 0 0 10px;
+			text-transform: uppercase;
+		}
+		ul {
+			list-style: square;
+			margin: 0 0 0 15px;
+			padding: 0 0 0 15px;
+			li {
+				color: $cl-white;
+				font-size: 11px;
+				text-transform: uppercase;
+				sup {
+					font-size: 9px;
+					text-transform: lowercase;
+				}
+			}
+		}
+	}
+	.figure {
+		float: left;
+		font-size: 0;
+		height: 100%;
+		margin: 0;
+		max-height: none;
+		max-width: none;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		img {
+			display: block;
+			height: auto;
+			left: 0;
+			margin: 0;
+			max-height: none;
+			max-width: none;
+			min-height: 100%;
+			min-width: 100%;
+			position: absolute;
+			top: 0;
+			width: auto;
+		}
+		&.h50 {
+			height: 50%;
+		}
+		&.h62 {
+			height: 62%;
+		}
+		&.h38 {
+			height: 38%;
+		}
+		&.w20 {
+			width: 20%;
+		}
+		&.w30 {
+			width: 30%;
+		}
+		&.w32 {
+			width: 32%;
+		}
+		&.w40 {
+			width: 40%;
+		}
+		&.w45 {
+			width: 45%;
+		}
+		&.w50 {
+			width: 50%;
+		}
+		&.w55 {
+			width: 55%;
+		}
+		&.w60 {
+			width: 60%;
+		}
+		&.w68 {
+			width: 68%;
+		}
+		&.w70 {
+			width: 70%;
+		}
+		&.w80 {
+			width: 80%;
+		}
+		&.w100 {
+			width: 100%;
+		}
+		
+		// Caption
+		.caption {
+			background-color: rgba($cl-black, 0.5);
+			bottom: 0;
+			color: $cl-white;
+			font-size: 11px;
+			line-height: 1em;
+			left: 0;
+			padding: 10px;
+			position: absolute;
+			//text-transform: uppercase;
+			right: 0;
+			z-index: 2;
+			strong {
+				display: block;
+				font-size: 20px;
+				line-height: 1.2em;
+				text-transform: uppercase;
+			}
+			&.xl {
+				strong {
+					font-size: 26px;
+				}
+			}
+			&.xs {
+				strong {
+					font-size: 10px;
+				}
+			}
+		}
+		
+		// Before BG
+/*		&::before {
+			content: '';
+			background: rgba(0,0,0,0);
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.33) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(75%, rgba(0,0,0,0)), color-stop(80%, rgba(0,0,0,0.33)), color-stop(90%, rgba(0,0,0,1)), color-stop(100%, rgba(0,0,0,1)));
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.33) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+			background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.33) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+			background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.33) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0.33) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
+			
+			bottom: 0;
+			left: 0;
+			opacity: 0.7;
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 1;
+		}*/
+	}
+}

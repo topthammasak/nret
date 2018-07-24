@@ -1,0 +1,42 @@
+/*******************************************************************
+* Timer - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 19, 2014
+*******************************************************************/
+
+.bg-pink > .timer {
+	
+}
+.timer {
+	h5 {
+		margin: 0;
+	}
+	ul {
+		font-size: 0;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		li {
+			display: inline-block;
+			strong {
+				display: block;
+			}
+			span {
+				
+			}
+		}
+	}
+	&.black {
+		h5 {
+			color: #000;
+		}
+		ul {
+			li {
+				span {
+					color: #000;
+				}
+			}
+		}
+	}
+}

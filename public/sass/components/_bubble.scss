@@ -1,0 +1,52 @@
+/*******************************************************************
+* Bubble - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 19, 2014
+*******************************************************************/
+
+.bubble {
+	background-color: $orange-bg;
+	color: #000;
+	font-size: 21px;
+	padding: 30px;
+	position: relative;
+	text-transform: uppercase;
+	white-space: nowrap;
+	width: 350px;
+	text-align: center;
+	@include border-radius(40px);
+	strong {
+		display: block;
+		font-size: 42px;
+	}
+	&:after {
+		content: '';
+		background-image: url('#{$img-path}bubble.png');
+		bottom: -44px;
+		height: 44px;
+		position: absolute;
+		right: 20px;
+		width: 99px;
+	}
+	&.size2 {
+		display: table-cell;
+		height: 50px;
+		line-height: 1em;
+		padding: 0;
+		vertical-align: middle;
+		@include border-radius(10px);
+		&:after {
+			background-image: url('#{$img-path}bubble-pink.sm.png');
+			bottom: -14px;
+			height: 14px;
+			right: 10px;
+			width: 31px;
+		}
+		&.alternate {
+			background-color: $teal;
+			&:after {
+				background-image: url('#{$img-path}bubble-teal.sm.png');
+			}
+		}
+	}
+}

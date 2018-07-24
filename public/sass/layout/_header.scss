@@ -1,0 +1,105 @@
+/*******************************************************************
+* Header - Layout
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 13, 2015
+*******************************************************************/
+
+.header {
+	background-color: $cl-brown;
+	float: left;
+	height: 100%;
+	width: $left-width;
+	
+	// Logo
+	h1 {
+		margin: 40px 40px 20px;
+	}
+	
+	// Languages
+	$languages-wh: 24px;
+	.languages {
+		text-align: center;
+		a {
+			border: 1px solid $cl-white;
+			color: $cl-white;
+			display: inline-block;
+			font-size: 10px;
+			height: $languages-wh;
+			line-height: $languages-wh - 2;
+			margin: 0 3px;
+			opacity: 0.2;
+			outline: none;
+			text-align: center;
+			text-decoration: none;
+			width: $languages-wh;
+			&:hover {
+				opacity: 0.8;
+			}
+			&.selected {
+				font-weight: 700;
+				opacity: 1;
+			}
+		}
+	}
+	
+	// Navigator
+	nav {
+		margin: 20px 0;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li {
+				background-image: url('#{$img-path}border-menu.png');
+				background-position: center bottom;
+				background-repeat: no-repeat;
+				a {
+					color: $cl-gray-3;
+					display: block;
+					font-weight: 300;
+					outline: none;
+					padding: 10px 0;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					&:hover {
+						color: $cl-white;
+					}
+					&.selected {
+						color: $cl-white;
+						font-weight: 800;
+					}
+				}
+			}
+		}
+	}
+	
+	// Share
+	.share {
+		margin: 0 0 10px;
+		text-align: center;
+		a {
+			/*background-color: $cl-white;*/
+			display: inline-block;
+			margin: 0 5px;
+			outline: none;
+			text-decoration: none;
+/*			@include border-radius(2px);
+			.pdl-facebook {
+				color: $cl-facebook;
+			}
+			.pdl-mail {
+				color: $cl-blue-2;
+			}*/
+		}
+	}
+	
+	// Copyright
+	small {
+		color: $cl-gray-3;
+		display: block;
+		font-size: 10px;
+		font-weight: 300;
+		text-align: center;
+	}
+}

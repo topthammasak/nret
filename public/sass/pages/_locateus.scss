@@ -1,0 +1,96 @@
+/*******************************************************************
+* Locate Us - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: January 16, 2015
+*******************************************************************/
+
+.locateus {
+	.gmap {
+		height: 100%;
+		width: 100%;
+	}
+	.contact {
+		background-color: $cl-white;
+		padding: 20px;
+		position: absolute;
+		right: 20px;
+		top: 40px;
+		width: 360px;
+		@include box-shadow(0 0 5px rgba($cl-black, 0.3));
+		h3 {
+			color: $cl-blue;
+			font-size: 20px;
+			font-weight: 700;
+			margin: 0 0 20px;
+			text-transform: uppercase;
+			small {
+				display: block;
+				font-size: 14px;
+				font-weight: 300;
+				margin: 5px 0 0;
+			}
+		}
+		address {
+			font-size: 12px;
+			strong {
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+		}
+		form {
+			h5 {
+				font-size: 13px;
+				font-weight: 700;
+				margin: 0 0 8px;
+				text-transform: uppercase;
+			}
+			.form-group {
+				.form-control {
+					font-size: 12px;
+					text-transform: uppercase;
+					@include border-radius(0);
+				}
+			}
+			.btn {
+				@include border-radius(0);
+			}
+		}
+	}
+	.gmapinfo {
+		padding: 4px 0;
+		white-space: nowrap;
+		h6 {
+			font-size: 14px;
+			font-weight: 700;
+			margin: 0 0 8px;
+			text-transform: uppercase;
+			white-space: nowrap;
+		}
+		a {
+			display: inline-block;
+			font-size: 11px;
+			line-height: 1.9em;
+			text-decoration: none;
+			text-transform: uppercase;
+			i {
+				background-color: $cl-blue;
+				color: $cl-white;
+				display: table;
+				float: left;
+				font-size: 12px;
+				height: 20px;
+				margin: 0 5px 0 0;
+				width: 20px;
+				@include border-radius(3px);
+				&::before {
+					display: table-cell;
+					text-align: center;
+					vertical-align: middle;
+				}
+			}
+			+ a {
+				margin-left: 15px;
+			}
+		}
+	}
+}

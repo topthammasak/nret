@@ -1,0 +1,74 @@
+/*******************************************************************
+* Home - Page
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 8, 2014
+*******************************************************************/
+
+.home {
+	background-image: url("#{$img-path}cover/home.md.jpg");
+	background-position: 33% 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.slogan {
+		color: $cl-blue;
+		font-size: 42px;
+		font-weight: 600;
+		line-height: 1.1em;
+		padding: 0;
+		position: absolute;
+		right: 20px;
+		text-align: right;
+		//text-shadow: 1px 1px 0 rgba($cl-black, 0.5);
+		text-transform: uppercase;
+		top: 20px;
+	}
+	.promotion {
+		background-image: url("#{$img-path}bg-promotion.green.png");
+		background-position: right bottom;
+		background-repeat: no-repeat;
+		bottom: 0;
+		color: $cl-white;
+		height: 148px;
+		overflow: hidden;
+		padding: 70px 0px 0px 35px;
+		position: absolute;
+		text-decoration: none;
+		text-transform: uppercase;
+		right: 0;
+		width: 309px;
+		&:hover {
+			text-decoration: none;
+		}
+		.highlight {
+			display: table-cell;
+			float: left;
+			font-size: 68px;
+			font-weight: 400;
+			line-height: 58px;
+			margin: 0 10px 0 0;
+		}
+		p {
+			display: table-cell;
+			font-size: 18px;
+			font-weight: 300;
+			letter-spacing: 5px;
+			line-height: 1em;
+			margin: 0;
+			strong,small {
+				display: block;
+			}
+			strong {
+				font-size: 38px;
+				font-weight: 600;
+				letter-spacing: 0;
+				line-height: 36px;
+			}
+			small {
+				font-size: 9px;
+				letter-spacing: 0;
+				line-height: 1em;
+				margin: 5px 0 0;
+			}
+		}
+	}
+}

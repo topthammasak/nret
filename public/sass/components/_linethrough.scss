@@ -1,0 +1,27 @@
+/*******************************************************************
+* Line Through - Component
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 23, 2014
+*******************************************************************/
+
+.linethrough {
+	overflow: hidden;
+	position: relative;
+	span {
+		background-color: #FFF;
+		display: inline-block;
+		padding: 5px 10px;
+		position: relative;
+		z-index: 1;
+	}
+	&:after {
+		content: '';
+		background-color: #000;
+		height: 1px;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		z-index: 0;
+	}
+}

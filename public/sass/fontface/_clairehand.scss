@@ -1,0 +1,15 @@
+/*******************************************************************
+* Claire Hand - Font Face
+* Created by: TheBusTeD (kwang@kingsfield.asia, tksumeth@gmail.com)
+* Date time: December 27, 2014
+*******************************************************************/
+
+@font-face {
+    font-family: "Claire Hand Regular";
+	src:	url("#{$font-face-path}ClaireHandRegular.eot?") format("eot"),
+			url("#{$font-face-path}ClaireHandRegular.woff") format("woff"),
+			url("#{$font-face-path}ClaireHandRegular.ttf") format("truetype"),
+			url("#{$font-face-path}ClaireHandRegular.svg#ClaireHand-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
